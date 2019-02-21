@@ -1,3 +1,5 @@
+//感觉还有一点可以优化的地方，寻找插入位点的时候可以用二分查找，然后直接对原数组进行改动- -
+
 /**
  * Definition for an interval.
  * struct Interval {
