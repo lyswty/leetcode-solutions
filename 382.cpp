@@ -18,11 +18,10 @@ public:
     
     /** Returns a random node's value. */
     int getRandom() {
-        int res,cnt=0;
+        int res,cnt=1;
         auto ptr=List;
         while(ptr){
-            if(!(rand()%(cnt+1))) res=ptr->val;
-            cnt++;
+            if(!(rand()%(cnt++))) res=ptr->val;
             ptr=ptr->next;
         }
         return res;
