@@ -1,8 +1,5 @@
 class Solution {
 public:
-    static bool cmp(const string &a,const string &b){
-        return a.size()<b.size();
-    }
     int findMaxForm(vector<string>& strs, int m, int n) {
         vector<vector<int>>dp(m+1,vector<int>(n+1,0));
         for(string &s:strs){
